@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painful Pleasures</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icon.min.css">
+</head>
+<body>
+
+    <!--section one: header-->
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-link">Wholesale - Pros Only</div>
+            <div class="top-bar-link">Retail</div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search by name, category...">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="menu">
+                <div class="menu-link">
+                    <button class="dropbtn"><i class="fas fa-users"></i> Community <i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+                <div class="menu-link">
+                    <button class="dropbtn"><i class="fas fa-user"></i> Account <i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                        <a href="#">Profile</a>
+                    </div>
+                </div>
+                <div class="menu-link">
+                    <button class="dropbtn"><i class="fas fa-shopping-cart"></i> Cart <i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">My Bag</a>
+                        <a href="#">Favorites</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--another nav with dropdown content linked to the corresponding card-->
+        <div class="main-bar">
+            <div class="logo">
+                <img src="src/img/logo.webp" alt="PainfulPleasures Logo">
+            </div>
+            <nav class="nav-bar">
+                <div class="nav-item">
+                    <a href="#body-jewelry">BODY JEWELRY <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#piercing">PIERCING <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#tattoo">TATTOO <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#medical">MEDICAL <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#studio">STUDIO <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#permanent-makeup">PERMANENT MAKEUP <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                    </div>
+                </div>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Section 2: Grid with 3 cards -->
+    <section>
+        <div class="grid-container">
+            <div class="grid-card card-large" data-title="SAVE 15% SITEWIDE">
+                <img src="/src/img/eagle.png" alt="Image 1">
+                <h2>SAVE 15% SITEWIDE</h2>
+                <h3>FOR CODERS OVER 200$</h3>
+                <h3>CODE: JULY 4</h3>
+                <button class="grid-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+            <div class="grid-card card-small" id="body-jewelry" data-title="WIRELESS EFFICIENCY">
+                <img src="/src/img/light.webp" alt="Image 2">
+                <h2>WIRELESS EFFICIENCY</h2>
+                <button class="grid-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+            <div class="grid-card card-small" id="piercing" data-title="PERSONAL PROTECTIVE EQUIPMENT">
+                <img src="/src/img/mask.jpg" alt="Image 3">
+                <h2>PERSONAL PROTECTIVE EQUIPMENT</h2>
+                <button class="grid-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Grid with 5 cards in one row -->
+    <section>
+        <div class="row-container">
+            <div class="row-card" id="tattoo" data-title="TATTOO SUPPLIES">
+                <h2>TATTOO SUPPLIES</h2>
+                <img src="/src/img/tattoo.png" alt="Image 1">
+                <button class="row-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+            <div class="row-card" id="body-jewelry" data-title="BODY JEWELRY">
+                <h2>BODY JEWELRY</h2>
+                <img src="/src/img/jewells.jpg" alt="Image 2">
+                <button class="row-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+            <div class="row-card" id="piercing" data-title="PIERCING SUPPLIES">
+                <h2>PIERCING SUPPLIES</h2>
+                <img src="/src/img/piercing.png" alt="Image 3">
+                <button class="row-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+            <div class="row-card" id="medical" data-title="MEDICAL SUPPLIES">
+                <h2>MEDICAL SUPPLIES</h2>
+                <img src="/src/img/medical.jpg" alt="Image 4">
+                <button class="row-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+            <div class="row-card" id="permanent-makeup" data-title="PERMANENT MAKEUP">
+                <h2>PERMANENT MAKEUP</h2>
+                <img src="/src/img/permament.jpg" alt="Image 5">
+                <button class="row-card-btn" onclick="showPopup(this)">SHOP NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div id="popup-body"></div>
+        </div>
+    </div>
+
+
+
+<!--section 4: carousel-->
+    <section id="studio">
+        <h1>New Products</h1>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <!-- Items will be added dynamically by JS -->
+                </div>
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+            <div class="carousel-dots"></div> <!-- Dot container -->
+        </div>
+    </section>
+    
+    <!--section 5: site-footer-->
+    <section class="site-footer">
+        <div class="container">
+            <div class="column">
+                <h3>HELPFUL LINKS</h3>
+                <a href="#">Contact us</a>
+                <a href="#">Support</a>
+                <a href="#">About</a>
+                <a href="#">Accessibility Statement</a>
+            </div>
+            <div class="column">
+                <h3>SHOPPING</h3>
+                <a href="#">Reviews</a>
+                <a href="#">Returns</a>
+                <a href="#">Shipping</a>
+                <a href="#">Track Order</a>
+            </div>
+            <div class="column contact">
+                <h3>GET IN TOUCH</h3>
+                <p><i class="fas fa-phone-alt"></i> 410-712-0145<br>(9:30am-5pm EST Mon - Fri)</p>
+                <p><i class="fas fa-envelope"></i> support@painfulpleasures.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/yourprofile" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="column newsletter">
+                <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                <input type="email" placeholder="Newsletter Sign-Up">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </div>
+    </section>
+
+   <!--section6: footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="select-wrapper">
+                <label for="shopping">Shopping:</label>
+                <select id="shopping">
+                    <option value="wholesale">Wholesale</option>
+                    <option value="retail">Retail</option>
+                </select>
+            </div>
+            <div class="select-wrapper">
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="english">English/USD</option>
+                    <option value="italian">Italian/EUR</option>
+                    <option value="albanian">Albanian/LEK</option>
+                </select>
+            </div>
+            <div class="links">
+                <a href="#">Sitemap</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <p>&copy; 2020 Painful Pleasures</p>
+            </div>
+            <div class="payment-icons">
+               
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard">
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="/src/script/script.js"></script>
+</body>
+</html>
