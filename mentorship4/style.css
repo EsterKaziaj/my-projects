@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ebeef4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 2px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #ebeef4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1opx;
+}
+
+.logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-links li {
+  margin-bottom: 15px;
+}
+
+.menu-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #5c5959;
+  transition: background-color 0.3s;
+}
+
+.menu-links a:hover {
+  background-color: rgba(201, 210, 227, 0.5);
+}
+
+.menu-links a i {
+  margin-left: 10px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.inline-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inline {
+  margin-bottom: 10px;
+}
+.inline h2 {
+  margin-top: 0.5rem; /* Adjust this value to reduce or increase space */
+  margin-bottom: 0.5rem; /* Adjust this value to reduce or increase space */
+}
+
+.content {
+  margin-left: 20%;
+  padding: 20px;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid-section {
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+  grid-template-rows: auto auto auto auto; /* 4 rows */
+  gap: 15px; /* gap between grid items */
+}
+
+.item {
+  flex-basis: 100%; /* full width of grid cell */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd; /* gray background for demonstration */
+  height: 260px;
+  border-radius: 5%;
+  color: white;
+}
+
+.area {
+  grid-column: span 2; /* spans 2 columns */
+  grid-row: span 2; /* spans 2 rows */
+  background-color: #1f6bff;
+  height: 525px;
+  display: block;
+  padding: 5%;
+  border-radius: 5%;
+  color: white;
+}
+
+/* Style to ensure that .area item takes up the first two rows and columns */
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(5),
+.item:nth-child(6) {
+  flex-basis: 50%;
+}
+
+/* Remaining items */
+.item:nth-child(n + 3):nth-child(-n + 4),
+.item:nth-child(n + 7):nth-child(-n + 8),
+.item:nth-child(n + 9):nth-child(-n + 12),
+.item:nth-child(n + 13):nth-child(-n + 16) {
+  flex-basis: 25%;
+}
+/* Different background colors for each item */
+.item:nth-child(2) {
+  background-color: #ff784a; /* blue */
+}
+
+.item:nth-child(3) {
+  background-color: #e15671; /* red */
+}
+
+.item:nth-child(4) {
+  background-color: #0aab7b; /* orange */
+}
+
+.item:nth-child(5) {
+  background-color: #8845f5; /* purple */
+}
+
+.item:nth-child(6) {
+  background-color: #ff784a; /* green */
+}
+
+.item:nth-child(7) {
+  background-color: #0aab7b; /* dark blue */
+}
+
+.item:nth-child(8) {
+  background-color: #8845f5; /* greenish */
+}
+
+.item:nth-child(9) {
+  background-color: #0aab7b; /* brown */
+}
+
+.item:nth-child(10) {
+  background-color: #e15671; /* dark purple */
+}
+
+.item:nth-child(11) {
+  background-color: #8845f5; /* light green */
+}
+
+.item:nth-child(12) {
+  background-color: #ff784a; /* dark red */
+}
+
+.item:nth-child(13) {
+  background-color: #e15671; /* bright blue */
+}
+
+.item:nth-child(14) {
+  background-color: #f1c40f; /* yellow */
+}
+
+.item:nth-child(15) {
+  background-color: #e67e22; /* dark orange */
+}
+
+.last-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #dae0ec;
+  margin-right: 20px;
+  height: 350px;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  /* Basic button styles */
+  padding: 15px 25px; /* Adjust padding to make the button bigger */
+  border: none;
+  border-radius: 25px; /* Makes the button more round */
+  background-color: yellow; /* Yellow background color */
+  color: #fff; /* White text color */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: orange; /* Orange background color on hover */
+}
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 10px;
+  width: 200px;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 10px -10px #fff;
+  border-radius: 10px;
+  background: #fff;
+  height: 10px;
+  width: 0;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 78%;
+  }
+}
+
+.block {
+  display: block;
+  margin-bottom: 15px;
+  padding: 15px;
+}
