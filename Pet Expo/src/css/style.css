@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+/*section one styling */
+.navbar {
+    overflow: hidden;
+    background-color: #e6d0ed;
+    
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #4217c3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar-active {
+    background-color: #79ced7;
+    color: white;
+}
+
+.navbar .navbar-icon {
+    display: none;
+}
+
+.dropdown-menu {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-menu .dropdown-button {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #4217c3;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e6d0ed;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #4217c3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar a:hover, .dropdown-menu:hover .dropdown-button {
+    background-color: #e9a4e1;
+    color: rgb(98, 29, 188);
+}
+
+.dropdown-content a:hover {
+    background-color: #e798de;
+    color: black;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.section-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('/src/img/background.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content h1, .section-content p, .section-content button {
+    position: relative;
+    z-index: 1;
+}
+
+.section-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.section-content img {
+    display: none;
+}
+
+.section-content h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.section-content p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.section-content button {
+    background-color: #514e4e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 1em 0;
+    text-decoration: none;
+}
+
+.section-content button a {
+    color: white;
+    text-decoration: none;
+}
+
+.section-content button:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #222121;
+}
+
+/*section two styling:card callery*/
+
+.petss{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 12px #aaa;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.search-bar-container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Reservation Section Styles */
+#reservation {
+    padding: 50px 0;
+    background-color: rgb(111, 107, 107);
+    height: 700px;
+}
+
+.reservation-form {
+    max-width: 800px;
+    margin: auto;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.btn3 {
+    background-color: rgb(17, 16, 16);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+/*contact section styling*/
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px; 
+    color:rgb(220, 25, 139);
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px; 
+    height: 400px;
+    margin-top: 20px;
+    border: 1px solid blue;
+}
+
+/*footer styling*/
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(111, 107, 107);
+    align-items: center;
+    padding: 18px;
+    color: white;
+    font-size: 15px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+  }
+
+  /*responsivity in smaller screens*/
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .navbar a:not(:first-child), .dropdown-menu .dropdown-button {
+        display: none;
+    }
+    .navbar a.navbar-icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .navbar-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar.responsive .dropdown-menu {
+        float: none;
+    }
+    .navbar.responsive .dropdown-content {
+        position: relative;
+    }
+    .navbar.responsive .dropdown-menu .dropdown-button {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .reservation-form{
+        text-align: center;
+    }
+    .reservation-form label,.reservation-form input,
+    .reservation-form textarea{
+        width:70%;
+        padding:10px;
+    }
+
+
+
+
+
+    .contact{
+        font-size: 12px;
+        padding:10px;
+    }
+    iframe {
+        width: 100%;
+        max-width: 200px; /* Adjust the maximum width of the map */
+        height: auto;
+        margin-top: 20px;
+        border: 1px solid blue;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+}

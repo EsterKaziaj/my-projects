@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="src/css/style.css">
+<title>Pet Expo gallery</title>
+</head>
+<body>
+    <!--section one: header navigation bar and ilustrative image with text and buttons-->
+<section>
+<div class="navbar" id="myNavbar">
+  <a href="#home" class="navbar-active">Home</a>
+  <a href="#about">About us</a>
+  <div class="dropdown-menu">
+    <button class="dropdown-button" >Pet types
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#cats">Cats</a>
+      <a href="#dogs">Dogs</a>
+      <a href="#birds">Birds</a>
+    </div>
+  </div> 
+  <a href="#contact">Contact us</a>
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="navbar-icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+  <div class="section-content" id="about">
+    <h1>Welcome to Our PET EXPO Gallery</h1>
+    <p>Explore the amazing world of pets. Find your favorite animals and learn more about them.</p>
+    <button><a href="#pets">Explore Gallery</a></button>
+</div>
+
+
+</section>
+
+<!--section two: pet gallery. search bar for pets . pet cards with picture and animal name-->
+<section class="petss" id="pets">
+
+<h2 style="text-align:center">Pet gallery</h2>
+<div class="gallery">
+    <div class="search-bar-container">
+      <input type="text" id="searchBar" class="search-bar" placeholder="Search for an animal..." >
+      <i class="fas fa-search search-icon"></i>
+    </div>
+    <div class="cards" id="animalCards"></div>
+  </div>
+<!--when clicking the cards a popup shows with all the info for the animal-->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 id="popupTitle"></h2>
+        <img id="popupImage" src="" alt="" style="width:100%">
+        <p id="popupOrigin"></p>
+        <p id="popupDescription"></p>
+    </div>
+</div>
+</section>
+
+
+<!--section three: reservation form -->
+<section class="reservation" id="reservation">
+    <div class="reservation-form">
+        <h1>Reservation</h1>
+        <h4>Book a session with us</h4>
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="session">Session:</label>
+            <select id="session" name="session" required>
+                <option value="">Select session</option>
+                <option value="makeup">Pet Wash</option>
+                <option value="hair">Veterinary Meeting</option>
+                <option value="makeup-hair">Pet Care</option>
+                
+            </select><br><br>
+
+            <label for="datetime">Date Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes"></textarea><br> <br>
+
+            <button class="btn3">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!--section four : contact us . adress phone nuumber social media icons that bring u to the actual social media -->
+<section class="contact" id="contact">
+    <div class="contact-info">
+        <h1>Contact Us</h1>
+        <h3>Get in touch with us for any inquiries.</h3>
+        <h3>ADRESS:</h3>
+        <h4>Dervish Hima Street Tirana,Albania near Air Albania Stadium.</h4>
+        <p>Phone: +3556967697</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5157270385303!2d19.82234887553043!3d41.31939760021057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350311e83884489%3A0x221ad89560544f0b!2sRruga%20Dervish%20Hima%2C%20Tirana%2C%20Albania!5e0!3m2!1sen!2s!4v1712014240373!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
+        <br><br>
+        <div class="social-icons">
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+   </section>
+   <!--section with footer-->
+   <section class="footer">
+    <footer>
+     <p>Copyright &copy;PET EXPO STORE Albania 2024 all rights reserved. </p>
+ </footer>
+ </section>
+<script src="script.js"></script>
+</body>
+</html>
