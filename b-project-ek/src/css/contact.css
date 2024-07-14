@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 56px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+
+/*section  */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-section {
+  padding: 50px 0;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2em;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info, .inquiries {
+  flex: 0 0 48%;
+  box-sizing: border-box;
+  min-width: 300px; 
+}
+
+.contact-info h3, .inquiries h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+
+/*i frame styling  */
+.map-responsive iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+/* form styling */
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+    color: #6c757d;
+  }
+  
+  .footer a {
+    color: #007bff;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .footer a:hover {
+    text-decoration: none;
+  }
+  
+  .footer .social-links {
+    text-align: left;
+  }
+  
+  .footer .quick-links {
+    text-align: right;
+  }
+  
+  .footer .copyright {
+    margin-top: 20px;
+    color: #6c757d;
+  }
+  
+  .footer .back-to-top {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    font-size: 14px;
+    text-align: right;
+  }
+  
+  #back-to-top {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #back-to-top:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 425px) {
+    .container {
+      width: 100%; /* Adjusted width to occupy full screen */
+      padding: 10px; /* Reduced padding for better spacing */
+    }
+  
+    .content {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .contact-info, .inquiries {
+      width: 100%; /* Full width for each section */
+      margin-bottom: 30px; /* Added margin between sections */
+    }
+  
+    .intro h2 {
+      font-size: 2rem; /* Adjusted font size */
+    }
+  
+    .intro p {
+      font-size: 1rem; /* Adjusted font size */
+    }
+  
+    .map-responsive iframe {
+      height: 200px; /* Reduced map height for smaller screens */
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9em; /* Smaller font size for inputs and textarea */
+    }
+  
+    .contact-form button {
+      font-size: 0.9em; /* Smaller font size for button */
+    }
+
+    /* Ensure footer links are aligned left and spaced */
+  .footer .social-links, .footer .quick-links {
+    text-align: left;
+  }
+
+  .footer .social-links a, .footer .quick-links a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: x-small;
+  }   
+  }
+  

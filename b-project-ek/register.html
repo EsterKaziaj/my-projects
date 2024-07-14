@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechForward 2024</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/fc22ebfc24.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/register.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">TechForward 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!--form section -->
+    <section class="registration-section">
+        <h1>Register for TechForward 2024</h1>
+        <p>Please fill out the form below to register for the event.</p>
+        <form id="registrationForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+            
+            <label for="attendance">Attendance Type</label>
+            <input type="radio" id="virtual" name="attendance" value="virtual" checked>
+            <label for="virtual">Virtual</label>
+            <input type="radio" id="inPerson" name="attendance" value="in-person">
+            <label for="inPerson">In-Person</label>
+            
+            <label for="sessionInterest">Session Interest</label>
+            <select id="sessionInterest" name="sessionInterest" required>
+                <option value="Technology Trends">Technology Trends</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+            </select>
+            
+            <label for="tickets">Number of Tickets</label>
+            <input type="number" id="tickets" name="tickets" placeholder="How many tickets?" required>
+            
+            <label for="arrival">Arrival Date</label>
+            <input type="date" id="arrival" name="arrival" required>
+            
+            <label for="additionalInfo">Additional Information</label>
+            <textarea id="additionalInfo" name="additionalInfo" placeholder="Any additional information or requirements"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 social-links">
+                    <p>Follow us on social media:</p>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <div class="col-md-6 quick-links">
+                    <p>Quick links:</p>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="register.html">Register</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">TechForward 2024 © All rights reserved.</p>
+                    <a href="#" class="back-to-top" id="back-to-top">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+    // Smooth scroll to top
+    document.getElementById('back-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+
+
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Form submitted successfully!');
+    
+});
+    </script>
+</body>
+</html>

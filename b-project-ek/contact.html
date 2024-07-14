@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechForward 2024</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/fc22ebfc24.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/contact.css"> 
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">TechForward 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!--contact section with page info ,map and form -->
+    <section class="contact-section" id="contact-page">
+        <div class="container">
+            <div class="intro">
+                <h2>Contact Us</h2>
+                <p>Get in touch with the TechForward 2024 team for any inquiries.</p>
+            </div>
+            <div class="content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> info@techforward2024.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Address:</strong> Pallati i Kongreseve, Bulevardi Dëshmorët e Kombit, Tiranë, Albania</p>
+                    <h3>Location</h3>
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.506803379665!2d19.81463511542295!3d41.317405879270746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350313d60cbf7c3%3A0xe2213baf9797e69a!2sPallati%20i%20Kongreseve!5e0!3m2!1sen!2sal!4v1688655771896!5m2!1sen!2sal" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="inquiries">
+                    <h3>Inquiries</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 social-links">
+                    <p>Follow us on social media:</p>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <div class="col-md-6 quick-links">
+                    <p>Quick links:</p>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="register.html">Register</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">TechForward 2024 © All rights reserved.</p>
+                    <a href="#" class="back-to-top" id="back-to-top">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+    // Smooth scroll to top
+    document.getElementById('back-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+</body>
+</html>
